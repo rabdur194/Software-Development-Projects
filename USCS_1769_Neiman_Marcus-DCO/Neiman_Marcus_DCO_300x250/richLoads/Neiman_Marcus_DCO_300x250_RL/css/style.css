@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'BigCaslonFB';
+    src: url('BigCaslonFB-Regular.woff')
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('FuturaLT.woff')
+}
+
+
+@font-face {
+    font-family: 'FuturaBook';
+    src: url('FuturaLT-Book.woff')
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: neuzeit-grotesk, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;    
+    color: #000;
+}
+
+#container {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 298px;
+    height: 248px;
+    overflow: hidden;
+    border: 1px solid gray;
+    opacity: 0;
+}
+
+.frameSize {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+}
+
+#frame1 {z-index: 70;}
+
+#bg{z-index: 1;
+    opacity: 0;
+}
+#f1Logo{z-index: 5;
+    transform: translateX(300px);
+}
+#f2Logo{z-index: 52; cursor: pointer;}
+
+
+#frame2{
+    background-color: white;
+    opacity: 0; 
+    z-index: 50;
+}
+
+#f1Headline {
+    position: absolute;
+    font-family: 'BigCaslonFB';
+    z-index: 5;
+}
+
+#f1cta {
+    position: absolute;
+    font-family: 'neuzeit-grotesk',sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 51;
+    width: 298px;
+    text-align: center;
+    z-index: 5;
+    font-family: 'Futura';
+    text-decoration:underline;
+    transform: translateX(-300px);
+}
+
+#footer {
+    position: absolute;
+    width: 300px;
+    height: 46px;
+    bottom: 0px;
+    z-index: 51;
+    background-color: #000;
+}
+
+#header {
+    position: absolute;
+    width: 298px;
+    height: 28px;
+    background-color: black;
+    z-index: 53;
+    cursor: pointer;
+}
+
+#offerText {
+    position: absolute;
+    font-family: 'neuzeit-grotesk',sans-serif;
+    font-family: 'FuturaMedium';
+    font-family: 'Futura';
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* slider css */
+
+.slider, #f2click {
+    position: absolute;
+    width: 250px;
+    height: 177px;
+    left: 23px;
+    z-index: 53;
+    top:26px;
+    cursor: pointer;
+}
+
+
+#f2click{
+    top: 0px;
+    height: 250px;
+    z-index: 60;
+    width: 237px;
+    left: 32px;
+}
+
+.frame {
+
+    width: 250px;
+    height: 100%;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slides {
+    display: inline-block;
+    height: 100%;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 100%;
+    /* background-color: red; */
+    font-size: 50px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 0;
+    left: 14px;
+    display: block;
+    cursor: pointer;
+}
+
+.prev {
+    left: -24px;
+}
+
+.arrow {
+    position: absolute;
+    width: 11px;
+    z-index: 99;
+}
+
+#arrowRight {
+    top: 31px;
+    left: 231px;
+}
+
+#arrowLeft {
+    top: 37px;
+    left: 24px;
+}
+
+.imageDiv {
+    position: absolute;
+    top: 4px;
+    width: auto;
+    max-width: 250px;
+    height: 118px;
+    left: 74px;
+}
+
+.brand {
+    position: absolute;
+    font-family: 'Futura';
+    left: 0;
+    top: 136px;
+    font-size: 9px;
+    
+}
+
+.productName {
+    position: absolute;
+    left: 0;
+    top: 147px;
+    font-size: 8px;
+    font-weight: 400;
+    width: 200px;
+    font-family: 'neuzeit-grotesk',sans-serif;
+    font-family: 'FuturaBook';
+}
+
+.productDescription {
+    position: absolute;
+    left: 0;
+    top: 158px;
+    font-size: 8px;
+    font-weight: 400;
+    width: 200px;
+    font-family: 'neuzeit-grotesk',sans-serif;
+    font-family: 'FuturaBook';
+}
+
+.price {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    font-size: 9px;
+    font-weight: 400;
+    width: 200px;
+    font-family: 'neuzeit-grotesk',sans-serif;
+    font-family: 'FuturaBook';
+}
+
+.cta2 {
+    position: absolute;
+    /* border: 1px solid black; */
+    right: 0;
+    font-family: 'neuzeit-grotesk',sans-serif;
+    font-family: sans-serif;
+    font-weight: 900;
+    /* height: 20px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 2px; */
+    text-decoration:underline;
+    cursor:pointer;
+    font-family: 'Futura';
+}
+
+
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	
+}
+
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+	
+}}
+
+/* Safari 10.1 */
+@media not all and (min-resolution:.001dpcm){ 
+@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+	
+}}
+
+/* Mozilla */
+@-moz-document url-prefix() {
+    .imageDiv {
+        top: 4px;
+    }
+    #offerText {
+        margin-top: -1px;
+    }
+    .cta2 {
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+}
