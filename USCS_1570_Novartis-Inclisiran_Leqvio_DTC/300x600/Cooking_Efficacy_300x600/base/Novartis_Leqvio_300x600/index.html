@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#main_rl {
+			width: 298px;
+			height: 441px;
+			position: absolute;	
+			left: 0;			
+			top: 0;
+			z-index: 1;
+			border: solid #000;
+    		border-width: 1px 1px 0px 1px;
+			visibility: hidden;
+		}
+		#isi_rl {			
+			width: 298px;
+			height: 158px;
+			position: absolute;	
+			left: 0;
+			top: 442px;
+			border: solid #000;
+    		border-width: 0px 1px 1px 1px;
+			z-index: 2;
+			visibility: hidden;
+		}	
+	</style>
+</head>
+<body>
+	<ft-richload id="main_rl" name="main_richload"></ft-richload>
+	<ft-richload id="isi_rl" name="isi_richload"></ft-richload>
+	<script src="https://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js"></script>	
+	<script type="text/javascript">
+	
+		var richloads_ready=0;
+		
+		myFT.on('richload_ready',function(){
+			richloads_ready++;
+			if(richloads_ready>1){
+				myFT.dispatch('start_banner')
+				myFT.$("#main_rl")[0].style.visibility="visible";
+				myFT.$("#isi_rl")[0].style.visibility="visible";
+			}
+		});	
+	</script>
+</body>
+</html>
