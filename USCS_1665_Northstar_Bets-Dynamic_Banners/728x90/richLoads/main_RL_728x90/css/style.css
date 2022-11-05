@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "MSB";
+    src: url("../fonts/MSB.woff") format("woff");
+}
+
+@font-face {
+    font-family: "MSR";
+    src: url("../fonts/MSR.woff") format("woff");
+}
+@font-face {font-family: "MSemiBold";src: url("../fonts/MontserratSemiBold.woff") format("woff");}
+@font-face {font-family: "MSemiRegular";src: url("MontserratRegular.woff") format("woff");}
+
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -moz-tap-highlight-color: rgba(255, 255, 255, 0);
+    -ms-tap-highlight-color: rgba(255, 255, 255, 0);
+    tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+html,
+body {
+    line-height: 1em;
+    height: 100%;
+    font-size: 24px;
+    font-family: "MSR";
+    background-color: white;
+    cursor: pointer;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+
+#CTA_text {
+    position: absolute;
+    font-family: MSR;
+    width: 92px;
+    top: 4px;
+    left: -1px;
+    text-align: center;
+    line-height: 100%;
+    line-height: 1.8em!important;
+}
+
+#CTA_background_image {
+    position: relative!important;
+}
+
+#main {
+    font-family: MSB;
+}
+
+#f1_headline_txt,
+#f1_subheadline_txt,
+#footnote_txt {
+    width: 395px;
+    line-height: 1.3em!important;
+    letter-spacing: 0.135em;
+}
+#f2_headline_txt,
+#f2_subheadline_txt{
+    width: 395px;
+    line-height: 1.3em!important;
+    letter-spacing: 0.195em;
+}
+#f3_headline_txt,
+#f3_subheadline_txt{
+    width: 395px;
+    line-height: 1.3em!important;
+    letter-spacing: 0.07em;
+}
+
+#f4_headline_txt,
+#f4_subheadline_txt,
+#f4_disclaimer_txt {
+    width: 395px;
+    line-height: 1.3em!important;
+    letter-spacing: 0.07em;
+}
+
+.macOS-safari #f1_headline_txt,
+#f2_subheadline_txt{
+    /* line-height: 1.35em!important; */
+}
+
+.macOS-safari #f2_headline_txt,
+#f2_subheadline_txt{
+    /* line-height: 1.35em!important; */
+    letter-spacing: 0.198em;
+}
+
+.macOS-safari #f3_headline_txt,
+#f3_subheadline_txt{
+    /* line-height: 1.38em!important; */
+
+}
+
+.macOS-firefox #f2_headline_txt,
+#f2_subheadline_tx{
+    letter-spacing: 0.196em;
+} 
+
+.macOS-firefox #f3_headline_txt,
+#f3_subheadline_txt{
+    /* line-height: 1.37em!important; */
+
+}
+
+.windows-IE #CTA_text{
+    top: 3px;
+}
+
+#f1_headline_txt,#f2_headline_txt,#f3_headline_txt,#f4_headline_txt,#f1_subheadline_txt,#f2_subheadline_txt,#f3_subheadline_txt,#f4_subheadline_txt,#f4_disclaimer_txt,#footnote_txt{
+    font-family: "MSemiBold";line-height:1.3em!important;
+}
+#legal_copy {
+    font-family: 'MSemiRegular';
+    font-weight: 400;
+    bottom: 5px;
+    position: absolute;
+    font-size: 6.5px;
+    line-height: 1.1em;
+    color: #fff;
+    left: 21px;
+    opacity: 0;
+}
