@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        #main_rl {
+            width: 300px;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            border: solid #000;
+            border-width: 1px 1px 1px 1px;
+        }
+    </style>
+    <title>Banner</title>
+</head>
+
+<body>
+    <ft-richload id="main_rl" name="main_richload"></ft-richload>
+    <script src="http://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js"></script>
+    <script>
+        var myFT = new FT,
+            container = myFT.$('#container');
+        container.css('opacity', 1);
+    </script>
+</body>
+
+</html>

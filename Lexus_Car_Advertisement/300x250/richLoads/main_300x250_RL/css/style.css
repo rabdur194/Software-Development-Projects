@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "NobelBold";
+    src: local("NobelBold"), url("../fonts/NobelBold.WOFF") format("woff");
+}
+
+@font-face {
+    font-family: "NobelBook";
+    src: local("NobelBook"), url("../fonts/NobelBook.WOFF") format("woff");
+}
+
+@font-face {
+    font-family: "NobelRegular";
+    src: local("NobelRegular"), url("../fonts/NobelRegular.WOFF") format("woff");
+}
+
+.copyMask {
+    width: 262px;
+    /* background-color: rgba(190, 7, 7, 0.665); */
+}
+
+#GL_gradient,
+#F1_logo {
+    z-index: 2;
+}
+
+#whiteBox {
+    top: 169px;
+    left: 20px;
+    width: 279px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+#GL_line {
+    top: 179px;
+    left: 30px;
+    width: 5px;
+    height: 39px;
+    background-color: rgb(0, 0, 0);
+    transform-origin: center top;
+    z-index: 2;
+}
+
+#F1_bg {
+    z-index: 1;
+}
+
+#F1_title {
+    font-family: "NobelRegular";
+    opacity: 1;
+    z-index: 2;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    left: 19px;
+    top: 150px
+}
+
+#F1_copy {
+    font-family: "NobelRegular";
+    z-index: 2;
+    font-size: 21.5px;
+    color: rgb(0, 0, 0);
+    left: 2px;
+    top: 171px;
+}
+
+#F2_copy {
+    font-family: "NobelRegular";
+    z-index: 2;
+    opacity: 0;
+    font-size: 21.5px;
+    color: rgb(0, 0, 0);
+    left: 2px;
+    top: 192px;
+}
+
+#EF_copy1 {
+    font-family: "NobelRegular";
+    z-index: 2;
+    opacity: 0;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    left: 0px;
+    top: 171px;
+}
+
+#EF_copy2 {
+    font-family: "NobelRegular";
+    z-index: 2;
+    opacity: 0;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    left: 1px;
+    top: 191px;
+}
+
+#EF_line {
+    top: 179px;
+    left: 30px;
+    width: 5px;
+    height: 72px;
+    background-color: rgb(0, 0, 0);
+    transform-origin: center top;
+    opacity: 0;
+    z-index: 2;
+}
+.CTA{
+    font-family:  "NobelBold";
+    padding: 2px 5px;
+    min-height: 23px;
+    min-width: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    letter-spacing: 0.08em;
+    font-size: 9.5px;
+    color: rgb(0, 0, 0);
+    left: 201px;
+    top: 218px;
+    z-index: 5;
+    opacity: 0;
+}
+.macOS-safari #EF_copy1{
+    margin-top: 3px;
+}
+.macOS-safari #EF_copy2{
+    margin-top: 1px;
+}
+.macOS-safari #F1_copy, 
+.macOS-safari #F2_copy{
+    margin-top: 1px;
+}
+
+
+.macOS-chrome #EF_copy1{
+    margin-top: 3px;
+}
+.macOS-chrome #EF_copy2{
+    margin-top: 1px;
+}
+.macOS-chrome #F1_copy,
+.macOS-chrome #F2_copy{
+    margin-top: 2px;
+}
+
+
+.macOS-firefox #EF_copy1{
+    margin-top: 2px;
+}
+.macOS-firefox #EF_copy2{
+    margin-top: 1px;
+}
+.macOS-firefox #F1_copy,
+.macOS-firefox #F2_copy{
+    margin-top: 1px;
+}

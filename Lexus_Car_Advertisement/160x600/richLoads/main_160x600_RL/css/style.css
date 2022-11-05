@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "NobelBold";
+    src: local("NobelBold"), url("../fonts/NobelBold.WOFF") format("woff");
+}
+
+@font-face {
+    font-family: "NobelBook";
+    src: local("NobelBook"), url("../fonts/NobelBook.WOFF") format("woff");
+}
+
+@font-face {
+    font-family: "NobelRegular";
+    src: local("NobelRegular"), url("../fonts/NobelRegular.WOFF") format("woff");
+}
+
+.copyMask {
+    width: 148px;
+}
+
+#whiteBox {
+    top: 228px;
+    left: 0px;
+    width: 149px;
+    height: 371px;
+    background-color: rgb(255, 255, 255);
+}
+
+#GL_line {
+    top: 251px;
+    left: 14px;
+    width: 121px;
+    height: 6px;
+    background-color: rgb(0, 0, 0);
+    transform-origin: center top;
+}
+
+#F1_title {
+    font-family: "NobelRegular";
+    opacity: 1;
+    z-index: 2;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    left: 13px;
+    top: 211px
+}
+
+#F1_copy {
+    font-family: "NobelRegular";
+    z-index: 2;
+    font-size: 17.5px;
+    color: rgb(0, 0, 0);
+    left: 0px;
+    top: 266px;
+    line-height: 1.1em;
+}
+
+#F2_copy {
+    font-family: "NobelRegular";
+    z-index: 2;
+    opacity: 0;
+    font-size: 17.5px;
+    color: rgb(0, 0, 0);
+    left: 0px;
+    top: 305px;
+    line-height: 1.1em;
+}
+
+#EF_copy1 {
+    font-family: "NobelRegular";
+    z-index: 2;
+    opacity: 0;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    left: 0px;
+    top: 265px;
+    line-height: 1.1em;
+}
+
+#EF_copy2 {
+    font-family: "NobelRegular";
+    z-index: 2;
+    opacity: 0;
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+    left: 0px;
+    top: 306px;
+}
+
+.CTA {
+    font-family: "NobelBold";
+    padding: 2px 5px;
+    min-height: 33px;
+    min-width: 121px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    letter-spacing: 0.08em;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    left: 13px;
+    top: 399px;
+    z-index: 5;
+    opacity: 0;
+}
+
+.macOS-safari #EF_copy1 {
+    margin-top: 3px;
+}
+
+.macOS-safari #EF_copy2 {
+    margin-top: 1px;
+}
+
+.macOS-safari #F1_copy,
+.macOS-safari #F2_copy {
+    margin-top: 1px;
+}
+
+.macOS-chrome #EF_copy1 {
+    margin-top: 3px;
+}
+
+.macOS-chrome #EF_copy2 {
+    margin-top: 1px;
+}
+
+.macOS-chrome #F1_copy,
+.macOS-chrome #F2_copy {
+    margin-top: 2px;
+}
+
+.macOS-firefox #EF_copy1 {
+    margin-top: 2px;
+}
+
+.macOS-firefox #EF_copy2 {
+    margin-top: 1px;
+}
+
+.macOS-firefox #F1_copy,
+.macOS-firefox #F2_copy {
+    margin-top: 1px;
+}
+
+.macOS-chrome #EF_cta {
+    padding: 4px 5px 2px 5px;
+}
