@@ -1,0 +1,405 @@
+
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-moz-tap-highlight-color: rgba(255, 255, 255, 0);
+	-ms-tap-highlight-color: rgba(255, 255, 255, 0);
+	/* tap-highlight-color: rgba(255, 255, 255, 0); */
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+} 
+
+.main {
+	width: 298px;
+	height: 248px;
+	border: 1px solid #777777;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	background-color: white;
+	cursor: default;
+	position: absolute;
+	opacity: 0;
+}
+
+.frameSize {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 300px;
+	height: 248px;
+	z-index: 1;
+}
+
+.abs{
+	position: absolute;
+}
+
+#banner {
+	background-color: white;
+	opacity: 1;
+}
+
+.logo-img{
+	opacity: 0;
+	left: 4px;
+    top: -3px;
+    width: 300px;
+} 
+
+.bg-img{
+	opacity: 0;
+	left: 3px;
+	width: 114px;
+	height: auto;
+	transform: scale(6) translate(44px, 32px);
+	image-rendering: -webkit-optimize-contrast;
+}
+
+
+.text {
+	position: absolute;
+	font-family: 'Roboto Condensed', sans-serif;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.headline {
+	font-weight: 700;
+	color: #003869;
+}
+
+#headline1 {
+	left: 114px;
+	top: 35px;
+	font-size: 20px;
+	line-height: 1.0em;
+	letter-spacing: -.01em;
+}
+
+#headline2 {
+	left: 114px;
+	top: 35px;
+	font-size: 20px;
+	line-height: 1em;
+}
+
+#headline3 {
+	left: 140px;
+	top: 63px;
+	font-size: 16px;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1em;
+}
+
+#headline4 {
+	left: 100px;
+	top: 50px;
+	font-size: 23px;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1.1em;
+}
+
+
+.legalCopy {
+	font-weight: normal;
+	top: 121px;
+	left: 32px;
+	font-size: 9px;
+	letter-spacing: 0.008em;
+	color: #003869;
+}
+
+#cta {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	background-color: #FF256D;
+	color: white;
+	padding: 7px 24px;
+	top: 90px;
+	left: 163px;
+	border-radius: 13px;
+	font-size: 10px;
+	letter-spacing: 0.05em;
+	z-index: 10;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#ISIWrapper {
+	position: absolute;
+	top: 167px;
+	left: -1px;
+	width: 300px;
+	height: 56px;
+	overflow: hidden;
+	cursor: default;
+	background-color: white;
+	opacity: 1;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 2;
+}
+
+#ISIWrapper::after {
+	pointer-events: none;
+	position: absolute;
+	height: 7px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	content: "";
+}
+
+#ISIContainer {
+	position: absolute;
+	width: 275px;
+	height: 56px;
+	left: 9px;
+	padding-right: 17px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	box-sizing: content-box;
+}
+
+.indication{
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	height: 22px;
+	background-color: #E5F3FF;
+	top: 145px;
+	font-size: 10px;
+	color: #003764;
+	font-weight: bold;
+	letter-spacing: -0.01em;
+}
+
+#indicationText {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 3px;
+}
+
+@-moz-document url-prefix() {
+	#indicationText {top: 2px}
+}
+
+#border {
+	position: absolute;
+	width: 300px;
+	height: 1px;
+	left: 0px;
+	bottom: 12px;
+	background-color: #777777;
+	opacity: 0;
+}
+
+#ISIText {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	padding: 5px 1px;
+	font-size: 10px;
+	line-height: 1.2em;
+	color: #003869;
+	font-weight: normal;
+	letter-spacing: -0.01em;
+}
+
+.center {
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -moz-box;
+	display: flex;
+}
+
+
+
+
+/* ------------------------------------------ ANIMATION */
+
+
+
+.ssb_down {
+	background-color: #33ccaa;
+	bottom: 0;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	border-radius: 10px;
+	display: none;
+}
+
+.ssb_sb {
+	background-color: #FF7F33;
+	cursor: pointer;
+	position: absolute;
+	top: 7px;
+    width: 4px;
+	right: 9px;
+	border-radius: 15px;
+}
+
+
+.ssb_st {
+	background-color: #EBEBEB;
+	cursor: pointer;
+	height: 55px;
+	position: absolute;
+	right: 9px;
+	top: 1px;
+	border: 0.1px solid #EBEBEB;
+	border-radius: 15px;
+	-webkit-transition: background 0.25s ease;
+	-moz-transition: background 0.25s ease;
+	-ms-transition: background 0.25s ease;
+	transition: background 0.25s ease;
+}
+
+
+.ssb_up {
+	background-color: #33ccaa;
+	cursor: pointer;
+	position: absolute;
+	right: 24px;
+	top: 0;
+	border-radius: 10px;
+	display: none;
+}
+
+strong {
+	font-weight: 700;
+}
+
+sup {
+	vertical-align: super;
+	position: relative;
+	font-size: 0.80em;
+    line-height: 0px;
+    top: 2px;
+}
+
+#ISIFooter {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: absolute;
+	width: 300px;
+	height: 23px;
+	bottom: 0px;
+	left: 0px;
+	color: #fff;
+	background-color: #003869;
+	font-size: 9px;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 3;
+}
+
+#patientInfo{
+	color: #fff;
+	font-size: 1.1em;
+	padding: 0px 3px;
+
+}
+#prescribeInfo  {
+	color: #fff;
+	font-size: 1.1em;
+	padding: 0px 3px 0px 0px;
+}
+
+.bold-underline{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.middlePipe{
+	font-size: 11.5px;
+}
+
+
+#ISIText p,
+#ISIText ul,
+#ISIText li {
+	font-size: 10px;
+	line-height: 1.3em;
+}
+#ISIText li {
+	margin-left: 8px;
+	margin-bottom: 5px;
+}
+#ISIText p {
+	margin-top: 0px;
+	margin-bottom: 4px;
+}
+
+#prescribeisi, #pi, #here {
+	color: #ef426f;
+	text-decoration: underline;
+}
+
+.caps {
+	font-weight: bold;
+}
+
+.hlBold {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+.itaic {
+	font-style: italic;
+}
+.signoff {
+	font-size: 9px;
+}
+
+.black{
+	color: #000000;
+}
+
+.ef426f{
+	color: #ef426f;
+}
+
+.mrl-17{
+	margin-left: 17px;
+}
+
+.class-ul {
+	list-style: none;
+	position: relative;
+  }
+  
+.class-ul li::before {
+	content: "\2022";
+	color: #ef426f;
+	font-weight: bold;
+	position: absolute;
+	left: 1px;
+  }
+
+  #logo_isi {
+	  margin-top: 6px;
+	  margin-bottom: 6px;
+  }
